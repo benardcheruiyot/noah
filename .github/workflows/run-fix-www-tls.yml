@@ -30,15 +30,15 @@ jobs:
             sudo chmod +x /usr/local/bin/fix_mkopaji_www_tls_noninteractive.sh
             sudo /usr/local/bin/fix_mkopaji_www_tls_noninteractive.sh
 
-        - name: Start Node.js server on EC2
-          uses: appleboy/ssh-action@v1.2.1
-          with:
-            host: ${{ secrets.EC2_HOST }}
-            username: ${{ secrets.EC2_USERNAME }}
-            key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
-            script: |
-              cd /home/${{ secrets.EC2_USERNAME }}/noah-main
-              nohup node backend/server.js > server.log 2>&1 &
+      - name: Start Node.js server on EC2
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+          script: |
+            cd /home/${{ secrets.EC2_USERNAME }}/noah-main
+            nohup node backend/server.js > server.log 2>&1 &
 
       - name: Fetch verification from public site
         run: |
