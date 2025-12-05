@@ -38,9 +38,9 @@ HOST=0.0.0.0
 BUSINESS_NAME=Your Business Name
 
 # Production Callback URLs (Your actual domain)
-MPESA_CALLBACK_URL=https://yourdomain.com/api/mpesa-callback
-MPESA_TIMEOUT_URL=https://yourdomain.com/api/mpesa-timeout
-MPESA_RESULT_URL=https://yourdomain.com/api/mpesa-result
+MPESA_CALLBACK_URL=https://pewa.mkopaji.com/api/mpesa-callback
+MPESA_TIMEOUT_URL=https://pewa.mkopaji.com/api/mpesa-timeout
+MPESA_RESULT_URL=https://pewa.mkopaji.com/api/mpesa-result
 MPESA_ENVIRONMENT=production
 JWT_SECRET=your-super-secure-jwt-secret-here
 ENCRYPTION_KEY=your-32-character-encryption-key
@@ -48,7 +48,7 @@ ENCRYPTION_KEY=your-32-character-encryption-key
 # Email Configuration (for notifications)
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USER=noreply@yourdomain.com
+SMTP_USER=noreply@pewa.mkopaji.com
 SMTP_PASS=your-email-password
 
 # SMS Configuration (for notifications)
