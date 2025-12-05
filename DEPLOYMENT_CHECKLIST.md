@@ -210,7 +210,7 @@ sudo journalctl -u nginx
 
 ```bash
 # Test health endpoint
-curl http://localhost:3000/api/health
+curl http://localhost:3003/api/health
 
 # Test external access
 curl https://your-domain.com/api/health

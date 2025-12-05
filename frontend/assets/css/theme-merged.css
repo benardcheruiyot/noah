@@ -20,13 +20,13 @@
   display: inline-flex;
   width: 28px;
   height: 28px;
-  background: linear-gradient(180deg, var(--primary), var(--secondary));
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  font-weight: 800;
-  font-size: 1.1rem;
+    --gradient-background: linear-gradient(135deg, #1e3a8a 0%, #38bdf8 100%);
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --secondary: #14b8a6;
+    --secondary-dark: #0e7490;
+    --accent: #f59e42;
+    --accent-dark: #ea580c;
   box-shadow: 0 4px 16px rgba(37,99,235,0.10);
 }
 
@@ -35,8 +35,8 @@
 .check-list li {
   position: relative;
   padding-left: 2.6rem;
-  font-weight: 600;
-  color: var(--primary-dark);
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+    color: #f8fafc;
   font-size: 1rem;
 }
 .check-list li::before {
@@ -49,7 +49,7 @@
   position: absolute;
   left: 0;
   top: 0.15rem;
-}
+    color: var(--accent-dark);
 .check-list li::after {
   content: '\2713';
   position: absolute;

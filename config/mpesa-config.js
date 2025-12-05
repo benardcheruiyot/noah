@@ -70,7 +70,7 @@ module.exports = {
  *    - Go to https://developer.safaricom.co.ke/
  *    - Create account and new app
  *    - Use sandbox credentials for testing
- *    - Use ngrok to expose your local server: `ngrok http 3000`
+ *    - Use ngrok to expose your local server: `ngrok http 3003`
  *    - Update CALLBACK_URL with your ngrok URL
  * 
  * 2. PRODUCTION SETUP:
