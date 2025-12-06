@@ -42,8 +42,8 @@ jobs:
 
       - name: Fetch verification from public site
         run: |
-          echo "Fetching https://kopa.mkopaji.com/ to confirm headers"
-          curl -I https://kopa.mkopaji.com/ || true
+          echo "Fetching https://hella.mkopaji.com/ to confirm headers"
+          curl -I https://hella.mkopaji.com/ || true
 
 # IMPORTANT: Add repository secrets: EC2_HOST, EC2_USERNAME, EC2_SSH_PRIVATE_KEY (private key contents)
 #
