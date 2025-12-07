@@ -18,7 +18,7 @@ module.exports = {
     PASSKEY: process.env.MPESA_PASSKEY || 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919',
     
     // Callback URLs (SANDBOX)
-    CALLBACK_URL: process.env.MPESA_CALLBACK_URL || 'https://mydomain.com/path',
+    CALLBACK_URL: process.env.MPESA_CALLBACK_URL || 'https://pewa.mkopaji.com/api/mpesa-callback',
     TIMEOUT_URL: process.env.MPESA_TIMEOUT_URL || 'https://mydomain.com/path',
     RESULT_URL: process.env.MPESA_RESULT_URL || 'https://mydomain.com/path',
     

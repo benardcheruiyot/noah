@@ -68,7 +68,7 @@ npm install
 3. **Set Callback URL**:
    ```bash
    # For local development with ngrok
-   CALLBACK_URL: 'https://your-ngrok-url.com/api/mpesa-callback'
+   CALLBACK_URL: 'https://pewa.mkopaji.com/api/mpesa-callback'
    ```
 
 ### 3. Environment Setup
@@ -79,7 +79,7 @@ MPESA_CONSUMER_KEY=your_consumer_key
 MPESA_CONSUMER_SECRET=your_consumer_secret
 MPESA_BUSINESS_SHORTCODE=174379
 MPESA_PASSKEY=your_passkey
-MPESA_CALLBACK_URL=https://your-domain.com/api/mpesa-callback
+MPESA_CALLBACK_URL=https://pewa.mkopaji.com/api/mpesa-callback
 MPESA_ENVIRONMENT=sandbox
 PORT=3000
 ```
@@ -128,7 +128,7 @@ Access the application at: `http://localhost:3000`
    ENVIRONMENT: 'production'
    CONSUMER_KEY: 'live_consumer_key'
    CONSUMER_SECRET: 'live_consumer_secret'
-   CALLBACK_URL: 'https://yourdomain.com/api/mpesa-callback'
+   CALLBACK_URL: 'https://pewa.mkopaji.com/api/mpesa-callback'
    ```
 
 ## 📱 API Endpoints
