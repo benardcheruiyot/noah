@@ -18,7 +18,7 @@
     "pm2-restart": "pm2 restart kopa-mkopaji",
     "pm2-logs": "pm2 logs kopa-mkopaji",
     "pm2-status": "pm2 status",
-    "health-check": "curl -f http://localhost:3002/api/health",
+    "health-check": "curl -f http://localhost:3006/api/health",
     "lint": "eslint backend/ --ext .js",
     "format": "prettier --write backend/ config/"
   },
