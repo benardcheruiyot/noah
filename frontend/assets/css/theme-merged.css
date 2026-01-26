@@ -1,0 +1,80 @@
+/* Consolidated theme and canonical overrides migrated from dev-only overrides */
+:root {
+  /* Modern Blue/Teal Theme */
+  --gradient-background: linear-gradient(135deg, #e0e7ef 0%, #f8fafc 100%);
+  --cta-gradient-start: #2563eb;
+  --cta-gradient-end: #06b6d4;
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --secondary: #06b6d4;
+  --secondary-dark: #0e7490;
+  --accent: #38bdf8;
+  --accent-dark: #0ea5e9;
+  --green-1: #10b981;
+  --green-2: #059669;
+}
+
+
+/* Modern check icon style */
+.check-icon {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.10);
+}
+
+
+/* Modern checklist style */
+.check-list li {
+  position: relative;
+  padding-left: 2.6rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  font-size: 1rem;
+}
+.check-list li::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+}
+.check-list li::after {
+  content: '\2713';
+  position: absolute;
+  left: 3px;
+  top: -0.05rem;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 800;
+}
+
+
+/* Modern CTA/button styles */
+.btn-apply, .feature-apply, .cta-pill, .cta-circle {
+  background: linear-gradient(135deg, var(--cta-gradient-start), var(--cta-gradient-end));
+  color: #fff;
+  box-shadow: 0 18px 50px rgba(37,99,235,0.12);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  padding: 0.85em 2.2em;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.btn-apply:hover, .feature-apply:hover, .cta-pill:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(6,182,212,0.13);
+}
